@@ -12,7 +12,9 @@ function App() {
     const timer = setInterval(() => {
       if (isLoading && loadingProgress.length < 3) {
         setLoadingProgress((prev) => prev.concat("."));
-      } else if (isLoading && loadingProgress.length === 3) {
+      }
+
+      if (isLoading && loadingProgress.length === 3) {
         setLoadingProgress("");
       }
 
