@@ -62,7 +62,7 @@ function App() {
   }, [fetchMoviesHandler]);
 
   function addMovieHandler(movie) {
-    fetch("https://react-http-5429a-default-rtdb.firebaseio.com/movies.json", {
+    fetch("yourfirebaseapi", {
       method: "POST",
       body: JSON.stringify(movie),
       headers: {
